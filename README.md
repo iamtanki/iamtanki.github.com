@@ -1,2 +1,3 @@
-# iamtanki.github.com
-homepage
+[1] Q. Tan, K. Suenaga, and A. Igarashi. A Behavioral Type System for Memory-Leak Freedom. The 17th Workshop on Programming and Programming Languages (PPL 2015), Ehime, Japan. March, 2015. 
+  
+  Abstract: We propose a type system to abstract the behavior of a program under manual memory management. Our type system uses sequential processes as types where each action corresponds to an allocation and a deallocation of a fixed-size memory block. The abstraction obtained by our type system makes it possible to estimate an upper bound of memory consumption of a program. Hence, by using our type system with another safe-memory-deallocation analysis proposed by Suenaga and Kobayashi, we can verify memory-leak freedom even for nonterminating programs. We de- fine the type system, prove type soundness, and show a type reconstruction procedure that estimates an upper bound of memory consumption using an off-the-shelf model checker.
