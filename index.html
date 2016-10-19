@@ -6,8 +6,8 @@
 <meta name="Keywords" content="program analysis, program verification, memory leak, behavioral type system, static analysis, nonterminating program"/>
   <meta name="Description" content="Qi TAN's HomePage"/>
   <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
-  <link rel="stylesheet" href="http://www.fos.kuis.kyoto-u.ac.jp/~tanki/assets/prism.css" />
-  <link rel="stylesheet" href="http://www.fos.kuis.kyoto-u.ac.jp/~tanki/assets/normalize.css" />
+  <link rel="stylesheet" href="assets/prism.css" />
+  <link rel="stylesheet" href="assets/normalize.css" />
   <link rel="stylesheet" href="htmlccs/assets/index.css">
 
 </head>
@@ -17,7 +17,7 @@
 
     <div class="head">
         <div class="middle">
-            <h1><a href="http://www.fos.kuis.kyoto-u.ac.jp/~tanki/">Qi  TAN</a></h1>
+            <h1>Qi  TAN</h1>
         </div>
     </div>
 
@@ -32,27 +32,40 @@
                Programming and Programming Languages
                (<a href="http://www-kb.is.s.u-tokyo.ac.jp/ppl2015/programme/">PPL
                2015</a>), Ehime, Japan. March,
-               2015. [ <a href="papers/memoryleak.pdf">PDF</a>
+               2015. [ <B title = "We propose a type system to abstract the behavior of a program under
+manual memory management. Our type system uses sequential processes as
+types where each action corresponds to an allocation and a
+deallocation of a fixed-size memory block. The abstraction obtained by
+our type system makes it possible to estimate an upper bound of memory
+consumption of a program. Hence, by using our type system with another
+safe-memory-deallocation analysis proposed by Suenaga and Kobayashi,
+we can verify memory-leak freedom even for nonterminating programs. We
+de- fine the type system, prove type soundness, and show a type
+reconstruction procedure that estimates an upper bound of memory
+consumption using an off-the-shelf model checker.">Abstract</B> |<a href="papers/memoryleak.pdf">PDF</a>
                | <a href="papers/ppl2015.pdf">SLIDE</a> ]
 
-              <p><span style="font-weight:bold;
-              font-style:italic"><B>Abstract:</B></span> We propose a
-              type system to abstract the behavior of a program under
-              manual memory management. Our type system uses
-              sequential processes as types where each action
-              corresponds to an allocation and a deallocation of a
-              fixed-size memory block. The abstraction obtained by our
-              type system makes it possible to estimate an upper bound
-              of memory consumption of a program. Hence, by using our
-              type system with another safe-memory-deallocation
-              analysis proposed by Suenaga and Kobayashi, we can
-              verify memory-leak freedom even for nonterminating
-              programs. We de- fine the type system, prove type
-              soundness, and show a type reconstruction procedure that
-              estimates an upper bound of memory consumption using an
-              off-the-shelf model checker.
-              </p>
+            <p></p>
             </li>
+            
+            <li>
+              Qi Tan, Kohei Suenaga, and Atsushi Igarashi. An Extended Behavioral
+              Type System for Memory-leak Freedom.
+               (<a href="https://jssst2016.wordpress.com/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0/">JSSST
+                2016</a>), Sendai, Japan. September,
+               2016. [ <B title = "In the previous work, we proposed a behavioral type system for a programming language with dynamic memory
+allocation and deallocation.  The behavioral type system, which uses sequential processes as types where
+each action is related to an allocation and a deallocation, can estimate an upper bound of memory
+consumption of a program.  However, the previous type system did not deal with path-sensitivity, which
+results in an imprecise abstraction even for a simple program.  In order to address this problem, we propose
+an extension of the previous type system with path-sensitive behavioral types.  Our extended type 
+system can capture path-sensitive behavior of a program, which enables more precise analysis of the 
+behavior of a program.">Abstract</B>  |<a href="papers/jssst2016.pdf">PDF</a>
+               | <a href="papers/jssst2016_pre.pdf">SLIDE</a> ]
+
+              <p></p>
+            </li>
+
 
           </ul>
         </div>
@@ -71,20 +84,6 @@
 
 <!--   <script src="assets/prism.js"></script> -->
 <!-- <script src="assets/baseliner.js"></script> -->
-<!-- <script> -->
-<!-- window.onload = function() { -->
-<!--     var baseliner = new Baseliner(24); -->
-<!-- } -->
-<!-- </script> -->
-<!-- <script>// ga -->
-<!-- var _gaq = _gaq || []; -->
-<!-- _gaq.push(['_setAccount', 'UA-36422454-1']); -->
-<!-- _gaq.push(['_trackPageview']); -->
-
-<!-- (function() { -->
-<!--  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; -->
-<!--  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; -->
-<!--  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); -->
-<!-- })();</script> -->
+ 
 </body>
 </html>
